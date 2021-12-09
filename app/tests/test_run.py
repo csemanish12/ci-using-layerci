@@ -19,10 +19,5 @@ class TestHome(TestCase):
         result = home()
         self.assertEqual(result, expected_result)
 
-    def test_fail(self):
-        result = False
-
-        self.assertEqual(True, result)
-
     def tearDown(self) -> None:
         pass
