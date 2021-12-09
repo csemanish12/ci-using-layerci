@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from app.app import home
+from app import home
 
 
 class TestHome(TestCase):
@@ -14,7 +14,7 @@ class TestHome(TestCase):
         self.assertEqual(result, expected_result)
 
     def test_home2(self):
-        expected_result = {"msgs": "hello world"}
+        expected_result = {"msg": "hello world"}
 
         result = home()
         self.assertEqual(result, expected_result)
