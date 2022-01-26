@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route('/home')
 def home():
-    message = "hello worlds"
-    return {"msg": message}
+    msg = "hello worlds"
+    return {"msg": msg}
 
 
 if __name__ == '__main__':
